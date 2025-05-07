@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Severance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Button Click Event -->
+    <button id="btnClick">New Episode</button>
+
+    <!-- Hover Event -->
+    <button id="btnHover">Last Episode</button>
+
+    <!-- Keypress Event -->
+    <input type="text" id="keyInput" placeholder="Type something...">
+
+    <!-- Double Click Event -->
+    <button id="btnDoubleClick">New Season</button>
+
+    <!-- Button to Change Text and Color -->
+    <button id="btnChangeTextColor">Reviews</button>
+
+    <!-- Image Gallery/Slideshow -->
+    <div class="gallery">
+        <img src="image1.jpeg" alt="Image 1" class="gallery-item" style="display:block;">
+        <img src="image2.jpeg" alt="Image 2" class="gallery-item" style="display:none;">
+        <img src="image3.jpeg" alt="Image 3" class="gallery-item" style="display:none;">
+    </div>
+
+    <!-- Tabs -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+    </div>
+
+    <div id="Tab1" class="tabcontent">
+        <p>Tab 1 content.</p>
+    </div>
+
+    <div id="Tab2" class="tabcontent" style="display:none;">
+        <p>Tab 2 content.</p>
+    </div>
+
+    <!-- Form Validation -->
+    <form id="myForm">
+        <input type="text" id="name" required placeholder="Enter your name">
+        <input type="email" id="email" required placeholder="Enter email">
+        <input type="password" id="password" placeholder="Enter password">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Real-time Feedback -->
+    <input type="text" id="feedbackInput" placeholder="Type something">
+    <p id="feedbackText"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
